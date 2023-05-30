@@ -66,10 +66,10 @@
     border-top:0.05rem solid var(--colorBorderSearch);
 }
 .showNavbarMobi{
-    animation: show 0.1s ease-in-out forwards;
+    display: block;
 }
 .hiddenNavbarMobi{
-    animation: hidden 0.1s ease-in-out forwards;
+    display: none;
 }
 
 .logoWeb{
@@ -643,24 +643,6 @@
 @keyframes light1{
     0% {transform: translateY(-100%);}
     100% {transform: rotate(0%);}
-}
-@keyframes show {
-    0%{
-        opacity: 0;
-        display: block;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes hidden {
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        display: none;
-    }
 }
 @media screen and (max-width: 1024px){
     .showSliderBar{
